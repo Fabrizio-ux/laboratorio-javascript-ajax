@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.8.0"><title>Ejercicio 1 Palíndromos</title><link rel="stylesheet" href="/laboratorio-javascript-ajax/_astro/fetch-demo.CspYIfOt.css">
+<style>.bg-blue-50[data-astro-cid-a6nehjuj]{background-color:#f0f9ff}.text-blue-600[data-astro-cid-a6nehjuj]{color:#2563eb}
+</style></head> <body data-astro-cid-sckkx6r4> <main id="main-content" class="max-w-5xl p-12 m-auto" data-astro-cid-sckkx6r4>   <h1 class="text-4xl font-bold text-center mb-12" data-astro-cid-a6nehjuj>
+🍒 Verificador de Palíndromos
+</h1> <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md"> <input type="text" id="palindromoInput" class="w-full p-3 border rounded-lg mb-4 text-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Ingresa una palabra o frase..."> <button id="checkBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200">
+Verificar
+</button> <div id="resultado" class="mt-6 text-center text-xl font-semibold"></div> </div> <script type="module">function d(e){const t=e.toLowerCase().replace(/[\W_]/g,""),n=t.split("").reverse().join("");return t===n}document.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("palindromoInput"),t=document.getElementById("checkBtn"),n=document.getElementById("resultado");if(!e||!t||!n)return;const r=()=>{const o=e.value;if(!o)return;const s=d(o);n.textContent=s?"✅ ¡Es un palíndromo!":"❌ No es un palíndromo",n.className=`mt-6 text-center text-xl font-semibold ${s?"text-green-600":"text-red-600"}`};t.addEventListener("click",r),e.addEventListener("keypress",o=>o.key==="Enter"&&r())});</script> <div class="mt-12 p-6 bg-blue-50 rounded-lg" data-astro-cid-a6nehjuj> <p class="text-gray-600" data-astro-cid-a6nehjuj>
+Ejemplos para probar:
+<span class="font-mono text-blue-600" data-astro-cid-a6nehjuj>
+"Reconocer", "Anita lava la tina", "A mamá Roma le aviva el amor a papá y a Roma le aviva el amor a mamá"
+</span> </p> </div> <div class="mt-8 text-center" data-astro-cid-a6nehjuj> <a href="/laboratorio-javascript-ajax/" class="text-blue-400 hover:text-blue-300 transition-colors" data-astro-cid-a6nehjuj>
+← Volver al menú principal
+</a> </div>  </main> </body></html>
